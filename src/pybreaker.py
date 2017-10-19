@@ -617,7 +617,7 @@ class CircuitBreakerState(object):
             self.on_failure(exc)
         else:
             self._handle_success()
-        raise exc
+        raise
 
     def _handle_success(self):
         """
